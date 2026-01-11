@@ -1,11 +1,8 @@
 // =========================== Mavzu Javascriptda o'zgaruvchilar ===============================
 
-
 // let admin='John'
 // let name=admin
 // console.log(name);
-
-
 
 // 1 chi misol
 
@@ -19,7 +16,6 @@
 
 // sayHi()
 // console.log(name);// scopedan tashqarida bo'lgani uchun ishlamadi
-
 
 // 2 chi misol
 // for (let i = 0; i < 10; i++) {
@@ -60,4 +56,33 @@
 // var num=10
 // console.log(window.num);//10 natija chiqaradi
 
+// Homework
+// 1.Vazifa
+// let name='Asilbek'
+// let lastName='Suvonov'
 
+// console.log(`Salom, ${name}, ${lastName}, Saytimizga xush kelibsiz`);
+
+// 2.Vazifa
+// let name='Asilbek'
+// let age=17
+
+// console.log(`Sizning ismingiz ${name} va yoshingiz ${age} da. Bir yil o'tib ${age + 1} yosh bo'lasiz.`);
+
+// 3.Vazifa
+
+// let book = "Kitob";
+// let price = 15000;
+// let takeProduct = 5;
+// console.log(
+//   `Siz ${takeProduct} dona ${book} sotib oldingiz. Jami to'lov: ${
+//     takeProduct * price
+//   } so'm.`
+// );
+
+// 4.Vazifa
+
+// let firstName='Asilbek'
+// let lastName='Suvonov'
+
+// console.log(`${firstName}${lastName}@gmail.com`);
