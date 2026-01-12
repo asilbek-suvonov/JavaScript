@@ -59,3 +59,10 @@
 // let id = Symbol("id");
 // // 7.BigInt - Juda katta sonlar bilan ishlash uchun. (Oxirida n bo‘lishi shart.)
 // let bigNumber = 12345678901234567890n;
+
+
+const user = {
+  name: "Ali",
+  age: 18,
+  isAdmin: true
+};

@@ -76,7 +76,6 @@
 // }
 
 // let product = Number(prompt("mahsulotni narxini kiriting"));
-
 // if (product >= 100) {
 //   let discount = product * 0.1;
 //   let finalPrice = product - discount;
@@ -86,3 +85,9 @@
 // } else {
 //   console.log("Afsuski, sizga chegirma yo‘q");
 // }
+
+const hello = 12;
+
+let object={
+  let:'dsadsaasddsa'
+}
