@@ -85,9 +85,3 @@
 // } else {
 //   console.log("Afsuski, sizga chegirma yo‘q");
 // }
-
-const hello = 12;
-
-let object={
-  let:'dsadsaasddsa'
-}
