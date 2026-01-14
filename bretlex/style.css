@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  --btn-color: #263238;
+  --text-color: #8f95a5;
+  --btn-hover: #f3ebdf;
+  --navLink-hover: #967851;
+  --grid-card-bg: #f5f5f5;
+  --price-btn-hover: #efefef;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+ul {
+  display: flex;
+  gap: 30px;
+}
+ul li {
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+}
+ul li:hover {
+  color: var(--navLink-hover);
+  cursor: pointer;
+}
+.navBtn {
+  background-color: transparent;
+  padding: 8px 18px;
+  border-radius: 7px;
+  transition: 0.3s ease;
+  border: 1px solid var(--btn-color);
+}
+.navBtn:hover {
+  background-color: var(--btn-hover);
+  cursor: pointer;
+  border: 1px solid var(--navLink-hover);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.leftHero {
+  padding: 15px 0;
+  margin-top: 20px;
+  width: 450px;
+}
+
+.leftHero h1 {
+  font-size: 50px;
+  color: var(--btn-color);
+  padding: 15px 0;
+}
+
+.leftHero p {
+  font-size: 20px;
+  color: var(--text-color);
+  padding-bottom: 15px;
+}
+
+.heroBtn {
+  background-color: var(--btn-color);
+  padding: 13px 39px;
+  font-size: 23px;
+  color: white;
+  border: 1px solid var(--btn-color);
+  border-radius: 9px;
+  transition: 0.4s ease-in-out;
+}
+.heroBtn:hover {
+  background-color: var(--navLink-hover);
+  cursor: pointer;
+  border: 1px solid var(--navLink-hover);
+}
+.rightHero img {
+  width: 500px;
+}
+
+/* Skills section */
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 12px;
+}
+
+.div1 {
+  grid-row: span 6 / span 6;
+  background-color: var(--grid-card-bg);
+  padding: 25px;
+  border-radius: 10px;
+}
+.div1 .topSkill img {
+  width: 280px;
+}
+.div1 .rightSkills h2 {
+  padding: 10px 0;
+  color: var(--btn-color);
+}
+.div1 .rightSkills p {
+  color: var(--text-color);
+  padding: 20px 0;
+}
+.div2 {
+  position: relative;
+  grid-row: span 3 / span 3;
+  background-color: var(--grid-card-bg);
+  padding: 25px;
+  border-radius: 10px;
+}
+.div2 .writeSkill img {
+  width: 180px;
+  position: absolute;
+  right: 18px;
+  top: 10px;
+}
+.div2 .writeText {
+  position: absolute;
+  bottom: 10px;
+}
+.div2 .writeText .titleWrite {
+  color: var(--btn-color);
+  font-size: 19px;
+  padding: 8px 0;
+}
+.div2 .writeText .poragWrite {
+  font-size: 14px;
+  padding: 10px 0;
+  color: var(--text-color);
+  width: 300px;
+}
+.div2 .writeText .btnWrite {
+  background-color: var(--btn-color);
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border: 1px solid var(--btn-color);
+  border-radius: 9px;
+  transition: 0.4s ease-in-out;
+}
+.div3 {
+  grid-row: span 3 / span 3;
+  background-color: var(--grid-card-bg);
+  padding: 25px;
+  position: relative;
+  border-radius: 10px;
+}
+.div3 .bookSkill img {
+  width: 260px;
+  position: absolute;
+  right: 18px;
+  top: 10px;
+}
+.div3 .bookText {
+  position: absolute;
+  bottom: 20px;
+}
+.div3 .bookText .titleWrite {
+  color: var(--btn-color);
+  font-size: 19px;
+  padding: 8px 0;
+}
+.div3 .bookText .poragWrite {
+  font-size: 14px;
+  padding: 10px 0;
+  color: var(--text-color);
+  width: 300px;
+}
+.div3 .bookText .btnWrite {
+  background-color: var(--btn-color);
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border: 1px solid var(--btn-color);
+  border-radius: 9px;
+  transition: 0.4s ease-in-out;
+}
+
+.div5 {
+  grid-column: span 2 / span 2;
+  background-color: var(--grid-card-bg);
+  grid-row: span 3 / span 3;
+  grid-column-start: 2;
+  grid-row-start: 4;
+  padding: 25px;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.div5 .audoSkils img {
+  width: 310px;
+}
+.div5 .audioSkills .titleWrite {
+  color: var(--btn-color);
+  font-size: 24px;
+  padding: 5px;
+}
+.div5 .audioSkills .poragWrite {
+  color: var(--text-color);
+  padding: 5px;
+}
+.div5 .audioSkills {
+  width: 450px;
+}
+
+.div5 .audioSkills .audioBtn {
+  background-color: var(--btn-color);
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border: 1px solid var(--btn-color);
+  border-radius: 9px;
+  transition: 0.4s ease-in-out;
+  margin-top: 10px;
+}
+.titleDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+.title {
+  font-size: 30px;
+  color: var(--btn-color);
+}
+
+/* About section */
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding: 20px 0;
+}
+.leftAbout {
+  width: 500px;
+}
+.leftAbout p {
+  color: var(--text-color);
+}
+.leftAbout h1 {
+  color: var(--btn-color);
+  padding: 15px 0;
+}
+.leftAbout .count {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.peoples,
+.Teachers,
+.lang {
+  text-align: center;
+}
+.peoples,
+.Teachers,
+.lang h2 {
+  color: var(--btn-color);
+}
+.peoples,
+.Teachers,
+.lang p {
+  font-size: 14px;
+  color: var(--text-color);
+}
+.rightAbout img {
+  width: 400px;
+}
+
+/* Price section */
+.price {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.card1 {
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  height: 480px;
+}
+
+.card1 div img {
+  width: 300px;
+}
+.card1 .priceText h2 {
+  color: var(--btn-color);
+  padding: 10px 0;
+}
+.card1 .priceText p {
+  color: var(--text-color);
+  font-size: 15px;
+}
+.priceBtn {
+  background-color: var(--price-btn-hover);
+  padding: 4px 20px;
+  border: 1px solid rgba(128, 128, 128, 0.548);
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+/* Contact */
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.contact img{
+width: 400px;
+}
+.contactTxt {
+  width: 530px;
+}
+.contactTxt h1 {
+  font-size: 32px;
+}
+.contactTxt p {
+  color: var(--text-color);
+  padding: 10px 0;
+}
+
+.contactTxt .inp {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.contactTxt .inp input {
+  border: 1px solid var(--btn-color);
+  padding: 8px;
+  border-radius: 7px;
+  width: 50%;
+}
+
+.subBtn {
+  background-color: var(--btn-color);
+  color: var(--btn-hover);
+  padding: 9px 27px;
+  border: none;
+  border-radius: 8px;
+}
+
+
