@@ -46,11 +46,11 @@
 //     break;
 // }
 
-// let belgilar = prompt("biror narsa yozing meyor 10 ta harf");
-// let meyor = 10;
+let belgilar = prompt("biror narsa yozing meyor 10 ta harf");
+let meyor = 10;
 
-// if (belgilar.length > meyor) {
-//   console.log("success");
-// } else {
-//   console.log("belgilar biroz kup");
-// }
+if (belgilar.length > meyor) {
+  console.log("success");
+} else {
+  console.log("belgilar biroz kup");
+}
